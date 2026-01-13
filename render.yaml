@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: youtube-analyzer-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APIFY_API_TOKEN
+        sync: false  # Configurar manualmente en Render
+      - key: GOOGLE_SHEETS_ID
+        sync: false  # Configurar manualmente en Render
+      - key: GOOGLE_TOKEN_JSON
+        sync: false  # JSON del token de Google Sheets
+    healthCheckPath: /health
