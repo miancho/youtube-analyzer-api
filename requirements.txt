@@ -1,15 +1,15 @@
 # API
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-pydantic==2.5.3
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.10.0
 
 # YouTube scraping
-apify-client==1.12.2
+apify-client>=1.8.0
 
 # Google Sheets
-google-auth-oauthlib==1.2.0
-google-auth==2.27.0
-gspread==5.12.0
+google-auth-oauthlib>=1.2.0
+google-auth>=2.27.0
+gspread>=6.0.0
 
 # Utils
-python-dotenv==1.0.0
+python-dotenv>=1.0.0
